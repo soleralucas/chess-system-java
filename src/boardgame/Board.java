@@ -44,7 +44,7 @@ public class Board {
 		if(!positionExists(position)) {
 			throw new BoardException("Position not on the board");
 		}
-		return pieces[position.getRow()][position.getColumn()];
+		return pieces[position.getRow()][position.getColumn()]; //retorna a peça ou nulo se estiver vazio
 	}
 	
 	public void placePiece(Piece piece, Position position) {
