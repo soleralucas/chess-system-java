@@ -1,70 +1,128 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
 
-# Sobre o projeto
+## Sobre o projeto
 
-API desenvolvida utilizando Java com Spring Boot, JPA e Hibernate durante a realização de um curso de programação Java. O projeto consiste em uma API com banco de dados H2, contendo entidades como Produto, Item do Pedido, Pedido e Usuário, além de diferentes tipos de relacionamentos entre elas, adaptados para o paradigma de orientação a objetos.
+Projeto desenvolvido em Java com foco na aplicação prática de conceitos de Programação Orientada a Objetos. O sistema consiste em uma aplicação de xadrez executada via console, implementando as regras do jogo e a movimentação das peças através de uma lógica orientada a objetos.
 
-A aplicação segue o padrão de arquitetura MVC, contendo as camadas Model, Controller, Service e Repository para cada entidade do sistema. Além disso, o Postman foi utilizado para realizar os testes das requisições da API.
+Durante o desenvolvimento foram utilizados conceitos como:
+
+* Encapsulamento
+* Herança
+* Polimorfismo
+* Abstração
+* Tratamento de exceções
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/soleralucas/assets/blob/main/workshop-springboot4-jpa/Captura%20de%20tela%202026-05-28%20183836.png)
-![Modelo Conceitual](https://github.com/soleralucas/assets/blob/main/workshop-springboot4-jpa/Captura%20de%20tela%202026-05-28%20182005.png)
+![Modelo Conceitual](https://github.com/soleralucas/assets/blob/main/chess-system-java/chess-system-design.png)
+
 
 # Tecnologias utilizadas
 
 ## Back end
-- Java
+
+* Java
+* Programação Orientada a Objetos
 
 # Como executar o projeto
 
-## Back end
-
-Pré-requisitos:
+## Pré-requisitos
 
 * Java 17
-* Spring Tools Suite (STS)
 * Git Bash
+* Spring Tools Suite (STS), Eclipse ou IntelliJ
 
-O projeto utiliza o banco de dados H2 em memória, não sendo necessária a instalação de um banco de dados externo.
+## Clonar repositório
+
+Abra o Git Bash e execute os comandos abaixo:
 
 ```bash
 # clonar repositório
-git clone git@github.com:soleralucas/workshop-springboot4-jpa.git
+git clone git@github.com:soleralucas/chess-system-java.git
 
 # entrar na pasta do projeto
-cd workshop-springboot4-jpa
+cd chess-system-java
 ```
 
-Após clonar o projeto, importe-o na IDE Spring Tools Suite ou a que desejar como um projeto Maven.
+## Abrir o projeto na IDE
 
-Para executar a aplicação, utilize a própria IDE ou execute o comando abaixo no Git Bash:
+### Spring Tools Suite / Eclipse
+
+1. Abra a IDE.
+2. Clique em:
+
+```text
+File → Import
+```
+
+3. Expanda a opção:
+
+```text
+General
+```
+
+4. Selecione:
+
+```text
+Existing Projects into Workspace
+```
+
+5. Clique em:
+
+```text
+Next
+```
+
+6. Em:
+
+```text
+Select root directory
+```
+
+clique em:
+
+```text
+Browse
+```
+
+7. Selecione a pasta do projeto clonado.
+8. Aguarde a IDE reconhecer o projeto.
+9. Clique em:
+
+```text
+Finish
+```
+
+Após a compilação, a pasta `bin` será criada automaticamente pela IDE.
+
+## Executar o projeto
+
+O projeto pode ser executado diretamente pela IDE através da classe principal:
+
+```text
+src/application/Program.java
+```
+
+Clique com o botão direito no arquivo e selecione:
+
+```text
+Run As → Java Application
+```
+
+Após a execução inicial pela IDE, a forma recomendada para executar o projeto é através da pasta `bin`, permitindo visualizar apenas a interface do jogo no console, sem exibição do código-fonte.
+
+No Git Bash, execute os comandos:
 
 ```bash
-./mvnw spring-boot:run
+# entrar na pasta bin
+cd bin
+
+# executar o programa
+java application.Program
 ```
 
-A aplicação iniciará localmente na porta padrão:
+O jogo será iniciado diretamente no console.
 
-```bash
-http://localhost:8080
-```
-
-## Banco de dados H2
-
-O console do banco de dados H2 pode ser acessado pelo navegador através do link:
-
-```bash
-http://localhost:8080/h2-console
-```
-
-Por meio dele, é possível visualizar as tabelas e acompanhar as alterações realizadas no banco de dados pela aplicação.
-
-## Testes da API
-
-As requisições da API podem ser testadas utilizando o Postman, permitindo verificar o funcionamento dos endpoints e validar as funcionalidades da aplicação.
-
-Além disso, as alterações realizadas podem ser acompanhadas pelo console do banco de dados H2 através do navegador.
 
 
 # Autor
