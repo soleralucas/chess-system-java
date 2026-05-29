@@ -14,7 +14,7 @@ Durante o desenvolvimento foram utilizados conceitos como:
 * Tratamento de exceções
 
 ## Modelo conceitual
-![Modelo Conceitual](https://raw.githubusercontent.com/soleralucas/assets/main/chess-system-java/chess-system-design.png)
+![Modelo Conceitual](https://github.com/soleralucas/assets/blob/main/chess-system-java/chess-system-design.png)
 
 
 # Tecnologias utilizadas
