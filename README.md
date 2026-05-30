@@ -28,7 +28,7 @@ Durante o desenvolvimento foram utilizados conceitos como:
 
 ## Pré-requisitos
 
-* Java 17
+* Java 25
 * Git Bash
 * Spring Tools Suite (STS), Eclipse ou IntelliJ
 
