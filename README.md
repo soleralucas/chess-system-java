@@ -1,7 +1,7 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
 
-## Sobre o projeto
+# Sobre o projeto
 
 Projeto desenvolvido em Java com foco na aplicação prática de conceitos de Programação Orientada a Objetos. O sistema consiste em uma aplicação de xadrez executada via console, implementando as regras do jogo e a movimentação das peças através de uma lógica orientada a objetos.
 
